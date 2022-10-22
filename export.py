@@ -149,7 +149,7 @@ def scan_albums() -> list[Album]:
         elif match := re.compile(r'^(?P<album>.*?)$').search(d.name):
             # Name
             name = match.group(1)
-            dst = pathlib.Path(f'./export/{name}')
+            dst = pathlib.Path(f'./export/{name.replace(":", " - ")}')
             yield Album(name=name, artist='Various Artists', src=d, dst=dst)
         else:
             raise ValueError(f'{d.name} does not match any expected patterns!')
