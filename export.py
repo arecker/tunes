@@ -104,6 +104,9 @@ def filter_albums(album):
     if album.name.upper() in fav_albums:
         return True
 
+    if album.name.upper().startswith('ALEX\'S'):
+        return True
+
     return False
 
 
