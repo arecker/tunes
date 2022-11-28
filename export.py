@@ -61,11 +61,13 @@ def validate_export_size(limit=34359738368): # 32 gig
 def filter_albums(album):
     fav_artists = [
         'ADELE',
-        'BEYONCÉ',
         'ANGELS AND AIRWAVES',
+        'BEEGIE ADAIR',
+        'BEYONCÉ',
         'BLINK-182',
         'BO BURNHAM',
         'BON IVER',
+        'CELINE DION',
         'CHARLI XCX',
         'DC TALK',
         'FRANK OCEAN',
@@ -84,6 +86,7 @@ def filter_albums(album):
         '10 DAY',
         'ACID RAP',
         'CHARLI',
+        'CHRISTMAS AT HOME',
         'COLORING BOOK',
         'EVERMORE',
         'EVERY KINGDOM',
