@@ -6,9 +6,11 @@ import sys
 
 
 def main():
-    thumbstick = pathlib.Path('/media/recker/MUSIC/')
+    thumbstick = pathlib.Path('/Volumes/MUSIC/')
 
     for result in thumbstick.glob('*'):
+        if result.name == '.Spotlight-V100':
+            continue
         shutil.rmtree(result)
         logging.info('removed %s', result)
 

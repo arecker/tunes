@@ -61,18 +61,17 @@ def validate_export_size(limit=34359738368): # 32 gig
 def filter_albums(album):
     fav_artists = [
         'ADELE',
-        'ANGELS AND AIRWAVES',
         'BEEGIE ADAIR',
         'BEYONCÉ',
-        'BLINK-182',
-        'BO BURNHAM',
         'BON IVER',
         'CELINE DION',
         'CHARLI XCX',
+        'DANNY GO',
         'DC TALK',
         'FRANK OCEAN',
         'KANYE WEST',
         'KENNY BEATS',
+        'KENNY LATTIMORE',
         'LIL NAS X',
         'LUTHER VANDROSS',
         'MARVIN GAYE',
@@ -94,12 +93,12 @@ def filter_albums(album):
         'JESUS IS BORN',
         'KIDS SEE GHOSTS',
         'LOVER',
-        'MERRY CHRISTMAS LIL MAMA REWRAPPED',
-        'MERRY CHRISTMAS LIL MAMA',
+        'THE TORTURED POETS DEPARTMENT',
         'SNACKTIME',
         'SPIDER-MAN: INTO THE SPIDER-VERSE',
         'SURF',
         'THE 20-20 EXPERIENCE (DELUX EDITION)',
+        'MERRY CHRISTMAS LIL MAMA (THE GOOD PARTS)',
     ]
     if album.name.upper() in fav_albums:
         return True
